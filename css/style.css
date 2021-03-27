@@ -1,0 +1,47 @@
+body{font-family: 'Roboto', sans-serif; position: relative; min-height: 100vh; background: #f2f2f2;}
+
+.wrapper{padding: 35px;}
+.wrapper h1{margin-bottom: 10px}
+
+/* Card Style Start */
+.card {overflow: hidden; background: #fff; padding: 20px; border-radius: 5px; border:0; box-shadow: none;}
+.card h2{font-size: 24px; font-weight: 700; margin: 0 0 15px;}
+.card h3{font-size: 19px; font-weight: 400; margin: 0 0 15px; position: relative;padding-bottom: 5px; text-align: center;}
+.card h3:before{position: absolute;bottom: 0; left: 50%; width: 70%; margin-left: -35%; height: 1px; content: ''; background: #ccc;}
+.card h4{font-size: 18px; font-weight: 700; color: #444e9f; margin: 0 0 15px;}
+
+.filter-card ul{padding: 0; margin:0 -10px 10px; list-style: none; overflow: hidden;}
+.filter-card ul li{float: left; padding: 0 20px; margin-bottom: 15px; width: 50%;}
+.filter-card ul li a{display: block; padding: 10px; font-size: 18px; line-height: 22px; background: rgba(124, 186, 1, 0.4); text-align: center; color: #000; border-radius: 8px;}
+.filter-card ul li a:hover, .filter-card ul li a.active{background: rgba(124, 186, 1, 1); text-decoration: none;}
+
+.card p{display: inline-block; padding-right: 20px;margin: 0; vertical-align: middle; line-height: 16px}
+.card .rep-image{margin-bottom: 15px; background: #f2f2f2}
+.card .card-body{position: relative; padding: 0;}
+.card .card-body .card-body-top{padding:10px 15px; position: absolute; bottom: 100%; left: 0; width: 100%; background: rgba(0,174,198,0.87); color: #fff;}
+.card .card-body .card-body-top .time-carc{overflow: hidden; white-space: nowrap; max-width: 129px; padding-right: 0}
+.card .card-body ul{padding: 0; margin: 0; list-style-type: none;}
+.card .card-body ul li{padding: 5px 0; overflow: hidden; font-size: 17px; line-height: 20px; display: -ms-flexbox; display: flex;}
+.card .card-body ul li span{padding-left: 8px; color: #444e9f}
+.card .card-body ul li strong{max-width: 100px}
+/* Card Style End */
+.no-results{text-align: center; font-size: 30px; color: #fff;width: 100%}
+
+
+/* Responsive start */
+@media(max-width: 1199px){
+	.wrapper{padding: 20px 15px;}
+}
+@media(max-width: 991px){
+	.card{padding:12px  }
+	.filter-card ul{margin:0 -5px 10px }
+	.filter-card ul li{padding:0 7px }
+	.wrapper h1{font-size: 1.8rem}
+	.filter-card ul li a{padding: 6px ; font-size: 16px}
+
+}
+@media(max-width: 991px){
+	.wrapper{padding: 15px 5px;}
+	.wrapper h1 {font-size: 1.6rem;}
+	.card h2 {font-size: 22px;}
+}
